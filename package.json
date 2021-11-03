@@ -1,7 +1,14 @@
 {
     "name": "@cloud-technology/api-library",
     "private": true,
+    "version": "0.0.1",
     "type": "module",
+    "main": "index.js",
+    "exports": {
+        "default": "./index.js",
+        "node": "./index.js",
+        "import": "./index.js"
+    },
     "dependencies": {
         "compression": "^1.7.4",
         "express": "5.0.0-alpha.8",
@@ -10,8 +17,6 @@
     },
     "devDependencies": {
         "@types/compression": "^1.7.2",
-        "@types/express": "^4.17.13",
-        "@types/mongodb": "^4.0.7",
-        "@types/mongoose": "^5.11.97"
+        "@types/mongodb": "^4.0.7"
     }
 }
