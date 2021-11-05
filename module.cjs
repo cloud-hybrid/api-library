@@ -18,16 +18,6 @@ const Compression = require("compression");
 
 /***
  *
- * @type {((url: RequestInfo, init?: RequestInit) => Promise<Response>) | {Headers: Headers, Body: Body, FetchError: FetchError, isRedirect: (code: number) => boolean, RequestInfo: string | Request, RequestRedirect: "error" | "follow" | "manual", Request: Request, BodyInit: Blob | Buffer | URLSearchParams | NodeJS.ReadableStream | string, HeadersInit: Headers | Record<string, string> | Iterable<readonly [string, string]> | Iterable<Iterable<string>>, ResponseInit: ResponseInit, Response: Response, AbortError: AbortError, RequestInit: RequestInit, readonly default: (url: RequestInfo, init?: RequestInit) => Promise<Response>}}
- *
- */
-
-const Fetch = require("node-fetch")
-
-// noinspection JSClosureCompilerSyntax
-
-/***
- *
  * @type {AxiosStatic | {CancelTokenSource: CancelTokenSource, Axios: Axios, CancelStatic: CancelStatic, HeadersDefaults: HeadersDefaults, AxiosDefaults: AxiosDefaults, AxiosProxyConfig: AxiosProxyConfig, AxiosResponseTransformer: AxiosResponseTransformer, AxiosStatic: AxiosStatic, AxiosRequestConfig: AxiosRequestConfig, AxiosRequestTransformer: AxiosRequestTransformer, AxiosRequestHeaders: AxiosRequestHeaders, Cancel: Cancel, AxiosInstance: AxiosInstance, AxiosError: AxiosError, Method: "get" | "GET" | "delete" | "DELETE" | "head" | "HEAD" | "options" | "OPTIONS" | "post" | "POST" | "put" | "PUT" | "patch" | "PATCH" | "purge" | "PURGE" | "link" | "LINK" | "unlink" | "UNLINK", AxiosPromise: AxiosPromise, CancelTokenStatic: CancelTokenStatic, AxiosBasicCredentials: AxiosBasicCredentials, ResponseType: "arraybuffer" | "blob" | "document" | "json" | "text" | "stream", CancelToken: CancelToken, AxiosInterceptorManager: AxiosInterceptorManager, TransitionalOptions: TransitionalOptions, Canceler: Canceler, AxiosResponse: AxiosResponse, AxiosResponseHeaders: Record<string, string> & {"set-cookie"?: string[]}, AxiosAdapter: AxiosAdapter, readonly default: AxiosStatic}}
  *
  */
@@ -108,15 +98,6 @@ module.exports.Database = Database;
  *
  */
 module.exports.ORM = ORM;
-
-// noinspection JSClosureCompilerSyntax
-
-/**
- *
- * @type {{Headers: Headers, Body: Body, FetchError: FetchError, isRedirect: (function(number): boolean), RequestInfo: (string|Request), RequestRedirect: ("error"|"follow"|"manual"), Request: Request, BodyInit: (Blob|Buffer|URLSearchParams|NodeJS.ReadableStream|string), HeadersInit: (Headers|Record<string, string>|Iterable<[string, string]>|Iterable<Iterable<string>>), ResponseInit: ResponseInit, Response: Response, AbortError: AbortError, RequestInit: RequestInit, readonly default: (function(RequestInfo, RequestInit=): Promise<Response>)}}
- *
- */
-module.exports.Fetch = Fetch;
 
 // noinspection JSClosureCompilerSyntax
 

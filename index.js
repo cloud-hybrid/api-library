@@ -4,10 +4,19 @@ import {
     Database,
     Octokit,
     Router,
-    Fetch,
     Axios,
     ORM
 } from "./module.cjs";
+
+import * as __fetch__ from "node-fetch";
+
+/***
+ *
+ * @type {{Headers: Headers; Body: Body; FetchError: FetchError; isRedirect: (code: number) => boolean; RequestInfo: string | Request; RequestRedirect: "error" | "follow" | "manual"; Request: Request; BodyInit: Blob | Buffer | URLSearchParams | NodeJS.ReadableStream | string; HeadersInit: Headers | Record<string, string> | Iterable<readonly [string, string]> | Iterable<Iterable<string>>; ResponseInit: ResponseInit; Response: Response; AbortError: AbortError; RequestInit: RequestInit; readonly default: (url: RequestInfo, init?: RequestInit) => Promise<Response>}}
+ *
+ */
+
+const Fetch = __fetch__;
 
 // noinspection JSClosureCompilerSyntax
 
