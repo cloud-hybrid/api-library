@@ -18,8 +18,8 @@ import {
  */
 
 export const Library = {
-    Framework: () => Framework(),
     Compression,
+    Framework,
     Database,
     Octokit,
     Router,
