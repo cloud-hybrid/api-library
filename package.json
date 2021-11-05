@@ -17,6 +17,7 @@
         "@types/express": "^4.17.13",
         "@types/compression": "^1.7.2",
         "@types/mongodb": "^4.0.7",
-        "@types/mongoose": "^5.11.97"
+        "@types/mongoose": "^5.11.97",
+        "@octokit/openapi-types": "^11.2.0"
     }
 }
