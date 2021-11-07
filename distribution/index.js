@@ -1,17 +1,33 @@
-"use strict";
-exports.__esModule = true;
-exports.Library = void 0;
-var tslib_1 = require("tslib");
-var module_js_1 = require("./module.js");
-var Fetch = (0, tslib_1.__importStar)(require("node-fetch"));
-exports.Library = {
-    Compression: module_js_1.Compression,
-    Framework: module_js_1.Framework,
-    Database: module_js_1.Database,
-    Octokit: module_js_1.Octokit,
-    Router: module_js_1.Router,
-    Fetch: Fetch,
-    Axios: module_js_1.Axios,
-    ORM: module_js_1.ORM
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
 };
-exports["default"] = exports.Library;
+var _a = require("./module"), 
+// @ts-ignore
+Compression = _a.Compression, Framework = _a.Framework, Database = _a.Database, Octokit = _a.Octokit, Router = _a.Router, ORM = _a.ORM;
+var Fetch = Promise.resolve().then(function () { return __importStar(require("node-fetch")); }).then(function (Module) { return Module; });
+var Library = {
+    Compression: Compression,
+    Framework: Framework,
+    Database: Database,
+    Octokit: Octokit,
+    Router: Router,
+    Fetch: Fetch,
+    ORM: ORM
+};
+module.exports = Library;

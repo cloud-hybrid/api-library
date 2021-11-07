@@ -1,24 +1,23 @@
-import {
+const {
+    // @ts-ignore
     Compression,
     Framework,
     Database,
     Octokit,
     Router,
-    Axios,
     ORM
-} from "./module.js";
+} = require("./module");
 
-import * as Fetch from "node-fetch";
+const Fetch = import("node-fetch").then((Module) => Module);
 
-export const Library = {
+const Library = {
     Compression,
     Framework,
     Database,
     Octokit,
     Router,
     Fetch,
-    Axios,
     ORM
 };
 
-export default Library;
+module.exports = Library;

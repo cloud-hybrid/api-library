@@ -2,7 +2,6 @@
     "name": "@cloud-technology/api-library",
     "private": false,
     "version": "0.0.5",
-    "type": "module",
     "main": "src/index.js",
     "dependencies": {
         "axios": "latest",
