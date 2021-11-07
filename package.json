@@ -23,6 +23,5 @@
         "node-fetch": "latest",
         "octokit": "latest"
     },
-    "types": "./types",
-    "exports": "./distribution"
+    "types": "./types"
 }
