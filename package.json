@@ -2,9 +2,25 @@
     "name": "@cloud-technology/api-library",
     "private": false,
     "version": "0.0.5",
-    "main": "distribution/index.js",
     "type": "module",
+    "main": "src/index.js",
+    "exports": {
+        "default": [
+            "./src/index.js",
+            "./src/module.js"
+        ],
+        "import": [
+            "./src/index.js",
+            "./src/module.js"
+        ],
+        "node": [
+            "./src/index.js",
+            "./src/module.js"
+        ]
+    },
     "dependencies": {
+        "@types/compression": "^1.7.2",
+        "@types/express": "^4.17.13",
         "axios": "latest",
         "compression": "latest",
         "express": "next",
@@ -20,11 +36,5 @@
         "mongodb": "latest",
         "mongoose": "latest",
         "octokit": "latest"
-    },
-    "exports": {
-        "default": "./distribution/index.js",
-        "node": "./distribution/index.js",
-        "import": "./distribution/index.js"
-    },
-    "typings": "./types/index.d.ts"
+    }
 }
