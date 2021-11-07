@@ -1,3 +1,13 @@
+export default Library;
+declare namespace Library {
+    export { Compression };
+    export { Framework };
+    export { Database };
+    export { Octokit };
+    export { Router };
+    export { Fetch };
+    export { ORM };
+}
 import { Compression } from "./module";
 import { Framework } from "./module";
 import { Database } from "./module";
