@@ -1,25 +1,21 @@
-import * as $ from "./module.js";
+import * as Module from "./module.js";
 
 export const Library = {
-    Compression: $.Compression,
-    Application: $.Application,
-    Framework: $.Application,
-    Database: $.Database,
-    Octokit: $.Octokit,
-    Router: $.Router,
-    Axios: $.Axios,
-    API: $.API,
-    ORM: $.ORM
+    Compression: Module.Compression,
+    Application: Module.Application,
+    Database: Module.Database,
+    Octokit: Module.Octokit,
+    Router: Module.Router,
+    Axios: Module.Axios,
+    API: Module.API,
+    ORM: Module.ORM
 };
 
-export default Library;
-
-export const Application = Library.Application;
-export const Compression = Library.Compression;
-export const Framework = Library.Framework;
-export const Database = Library.Database;
-export const Octokit = Library.Octokit;
-export const Router = Library.Router;
-export const Axios = Library.Axios;
-export const API = Library.API;
-export const ORM = Library.ORM;
+export const Application = Module.Application;
+export const Compression = Module.Compression;
+export const Database = Module.Database;
+export const Octokit = Module.Octokit;
+export const Router = Module.Router;
+export const Axios = Module.Axios;
+export const API = Module.API;
+export const ORM = Module.ORM;
