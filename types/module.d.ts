@@ -1,3 +1,4 @@
+export const API: any;
 export const Application: any;
 export const Router: any;
 export const Compression: any;

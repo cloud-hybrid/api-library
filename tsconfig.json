@@ -5,9 +5,6 @@
     "declarationMap": true,
     "declarationDir": "types",
     "outDir": "distribution",
-    "moduleResolution": "Node",
-    "isolatedModules": true,
-    "module": "ESNext",
     "noEmitHelpers": false,
     "esModuleInterop": true,
     "importHelpers": true,
@@ -15,6 +12,6 @@
     "allowJs": true
   },
   "include": [
-    "src", "src/module.cjs"
+    "src"
   ]
 }

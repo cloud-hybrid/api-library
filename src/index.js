@@ -1,4 +1,3 @@
-// @ts-ignore
 import * as $ from "./module.js";
 
 export const Library = {
@@ -9,6 +8,7 @@ export const Library = {
     Octokit: $.Octokit,
     Router: $.Router,
     Axios: $.Axios,
+    API: $.API,
     ORM: $.ORM
 };
 
@@ -21,4 +21,5 @@ export const Database = Library.Database;
 export const Octokit = Library.Octokit;
 export const Router = Library.Router;
 export const Axios = Library.Axios;
+export const API = Library.API;
 export const ORM = Library.ORM;

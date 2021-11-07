@@ -1,8 +1,8 @@
-import * as Framework from "express";
+import express from "express";
 
-export const Application = Framework.application;
-
-export const Router = Framework.Router;
+export const API = express;
+export const Application = API();
+export const Router = API.Router;
 
 import { default as compression } from "compression";
 

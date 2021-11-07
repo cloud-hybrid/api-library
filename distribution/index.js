@@ -1,6 +1,9 @@
-// @ts-ignore
-import * as $ from "./module.js";
-export var Library = {
+"use strict";
+exports.__esModule = true;
+exports.ORM = exports.API = exports.Axios = exports.Router = exports.Octokit = exports.Database = exports.Framework = exports.Compression = exports.Application = exports.Library = void 0;
+var tslib_1 = require("tslib");
+var $ = (0, tslib_1.__importStar)(require("./module.js"));
+exports.Library = {
     Compression: $.Compression,
     Application: $.Application,
     Framework: $.Application,
@@ -8,14 +11,16 @@ export var Library = {
     Octokit: $.Octokit,
     Router: $.Router,
     Axios: $.Axios,
+    API: $.API,
     ORM: $.ORM
 };
-export default Library;
-export var Application = Library.Application;
-export var Compression = Library.Compression;
-export var Framework = Library.Framework;
-export var Database = Library.Database;
-export var Octokit = Library.Octokit;
-export var Router = Library.Router;
-export var Axios = Library.Axios;
-export var ORM = Library.ORM;
+exports["default"] = exports.Library;
+exports.Application = exports.Library.Application;
+exports.Compression = exports.Library.Compression;
+exports.Framework = exports.Library.Framework;
+exports.Database = exports.Library.Database;
+exports.Octokit = exports.Library.Octokit;
+exports.Router = exports.Library.Router;
+exports.Axios = exports.Library.Axios;
+exports.API = exports.Library.API;
+exports.ORM = exports.Library.ORM;

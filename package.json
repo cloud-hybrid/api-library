@@ -25,5 +25,6 @@
         "default": "./distribution/index.js",
         "node": "./distribution/index.js",
         "import": "./distribution/index.js"
-    }
+    },
+    "typings": "./types/index.d.ts"
 }
