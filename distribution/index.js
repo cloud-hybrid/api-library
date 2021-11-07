@@ -1,40 +1,21 @@
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
-    Object.defineProperty(o, "default", { enumerable: true, value: v });
-}) : function(o, v) {
-    o["default"] = v;
-});
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
-    __setModuleDefault(result, mod);
-    return result;
-};
-var _a = require("./module"), 
 // @ts-ignore
-Compression = _a.Compression, Framework = _a.Framework, Database = _a.Database, Octokit = _a.Octokit, Router = _a.Router, ORM = _a.ORM;
-var Fetch = Promise.resolve().then(function () { return __importStar(require("node-fetch")); }).then(function (Module) { return Module; });
-var Library = {
-    Compression: Compression,
-    Framework: Framework,
-    Database: Database,
-    Octokit: Octokit,
-    Router: Router,
-    Fetch: Fetch,
-    ORM: ORM
+import * as $ from "./module.js";
+export var Library = {
+    Compression: $.Compression,
+    Application: $.Application,
+    Framework: $.Application,
+    Database: $.Database,
+    Octokit: $.Octokit,
+    Router: $.Router,
+    Axios: $.Axios,
+    ORM: $.ORM
 };
-module.exports["default"] = Library;
-module.exports.Compression = Compression;
-module.exports.Framework = Framework;
-module.exports.Database = Database;
-module.exports.Octokit = Octokit;
-module.exports.Router = Router;
-module.exports.Fetch = Fetch;
-module.exports.ORM = ORM;
+export default Library;
+export var Application = Library.Application;
+export var Compression = Library.Compression;
+export var Framework = Library.Framework;
+export var Database = Library.Database;
+export var Octokit = Library.Octokit;
+export var Router = Library.Router;
+export var Axios = Library.Axios;
+export var ORM = Library.ORM;

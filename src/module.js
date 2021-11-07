@@ -1,21 +1,25 @@
-const Framework = require("express");
+import * as Framework from "express";
 
-const Compression = require("compression");
+export const Application = Framework.application;
 
-const Axios = require("axios");
+export const Router = Framework.Router;
 
-const Octokit = require("octokit");
+import { default as compression } from "compression";
 
-const Router = require("express").Router;
+export const Compression = compression;
 
-const Database = require("mongodb");
+import * as axios from "axios";
 
-const ORM = require("mongoose");
+export const Axios = axios.default;
 
-module.exports.Framework = Framework;
-module.exports.Compression = Compression;
-module.exports.Router = Router;
-module.exports.Database = Database;
-module.exports.ORM = ORM;
-module.exports.Axios = Axios;
-module.exports.Octokit = Octokit;
+import * as octokit from "octokit";
+
+export const Octokit = octokit;
+
+import * as database from "mongodb";
+
+export const Database = database;
+
+import * as orm from "mongoose";
+
+export const ORM = orm;

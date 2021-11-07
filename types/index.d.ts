@@ -1,19 +1,21 @@
-export default Library;
-declare namespace Library {
-    export { Compression };
-    export { Framework };
-    export { Database };
-    export { Octokit };
-    export { Router };
-    export { Fetch };
-    export { ORM };
+/// <reference types="mongoose" />
+export namespace Library {
+    const Compression: any;
+    const Application: any;
+    const Framework: any;
+    const Database: typeof import("mongodb");
+    const Octokit: typeof import("octokit");
+    const Router: any;
+    const Axios: import("axios").AxiosStatic;
+    const ORM: typeof import("mongoose");
 }
-import { Compression } from "./module";
-import { Framework } from "./module";
-import { Database } from "./module";
-import { Octokit } from "./module";
-import { Router } from "./module";
-export const Fetch: Promise<typeof import("node-fetch")>;
-import { ORM } from "./module";
-export { Compression, Framework, Database, Octokit, Router, ORM };
+export default Library;
+export const Application: any;
+export const Compression: any;
+export const Framework: any;
+export const Database: typeof import("mongodb");
+export const Octokit: typeof import("octokit");
+export const Router: any;
+export const Axios: import("axios").AxiosStatic;
+export const ORM: typeof import("mongoose");
 //# sourceMappingURL=index.d.ts.map
