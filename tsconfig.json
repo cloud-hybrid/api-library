@@ -1,0 +1,17 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "declaration": true,
+    "declarationMap": true,
+    "declarationDir": "types",
+    "outDir": "distribution",
+    "noEmitHelpers": false,
+    "esModuleInterop": true,
+    "importHelpers": true,
+    "checkJs": true,
+    "allowJs": true
+  },
+  "include": [
+    "src"
+  ]
+}

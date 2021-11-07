@@ -1,0 +1,14 @@
+var Framework = require("express");
+var Compression = require("compression");
+var Axios = require("axios");
+var Octokit = require("octokit");
+var Router = require("express").Router;
+var Database = require("mongodb");
+var ORM = require("mongoose");
+module.exports.Framework = Framework;
+module.exports.Compression = Compression;
+module.exports.Router = Router;
+module.exports.Database = Database;
+module.exports.ORM = ORM;
+module.exports.Axios = Axios;
+module.exports.Octokit = Octokit;
