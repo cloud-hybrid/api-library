@@ -1,26 +1,23 @@
 "use strict";
 exports.__esModule = true;
-exports.ORM = exports.API = exports.Axios = exports.Router = exports.Octokit = exports.Database = exports.Framework = exports.Compression = exports.Application = exports.Library = void 0;
+exports.ORM = exports.API = exports.Axios = exports.Router = exports.Octokit = exports.Database = exports.Compression = exports.Application = exports.Library = void 0;
 var tslib_1 = require("tslib");
-var $ = (0, tslib_1.__importStar)(require("./module.js"));
+var Module = (0, tslib_1.__importStar)(require("./module.js"));
 exports.Library = {
-    Compression: $.Compression,
-    Application: $.Application,
-    Framework: $.Application,
-    Database: $.Database,
-    Octokit: $.Octokit,
-    Router: $.Router,
-    Axios: $.Axios,
-    API: $.API,
-    ORM: $.ORM
+    Compression: Module.Compression,
+    Application: Module.Application,
+    Database: Module.Database,
+    Octokit: Module.Octokit,
+    Router: Module.Router,
+    Axios: Module.Axios,
+    API: Module.API,
+    ORM: Module.ORM
 };
-exports["default"] = exports.Library;
-exports.Application = exports.Library.Application;
-exports.Compression = exports.Library.Compression;
-exports.Framework = exports.Library.Framework;
-exports.Database = exports.Library.Database;
-exports.Octokit = exports.Library.Octokit;
-exports.Router = exports.Library.Router;
-exports.Axios = exports.Library.Axios;
-exports.API = exports.Library.API;
-exports.ORM = exports.Library.ORM;
+exports.Application = Module.Application;
+exports.Compression = Module.Compression;
+exports.Database = Module.Database;
+exports.Octokit = Module.Octokit;
+exports.Router = Module.Router;
+exports.Axios = Module.Axios;
+exports.API = Module.API;
+exports.ORM = Module.ORM;
