@@ -8,14 +8,14 @@ import compression from "compression";
 
 export const Compression = compression;
 
-import * as axios from "axios";
-export const Axios = axios.default;
+import axios from "axios";
+export const Axios = axios;
 
-import * as octokit from "octokit";
+import octokit from "octokit";
 export const Octokit = octokit;
 
-import * as database from "mongodb";
+import database from "mongodb";
 export const Database = database;
 
-import * as orm from "mongoose";
+import orm from "mongoose";
 export const ORM = orm;
