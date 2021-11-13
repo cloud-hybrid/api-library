@@ -1,3 +1,7 @@
+/***
+ *  * @type {import("express")}
+ */
+
 import express from "express";
 
 export const API = express;
@@ -9,13 +13,33 @@ import compression from "compression";
 export const Compression = compression;
 
 import axios from "axios";
+
+/***
+ * @type {import('axios').AxiosStatic}
+ */
+
 export const Axios = axios;
 
 import octokit from "octokit";
+
+/***
+ * @type {{Octokit: any, createNodeMiddleware: any, App: any, OAuthApp: any}}
+ */
+
 export const Octokit = octokit;
 
-import database from "mongodb";
-export const Database = database;
+import mongodb from "mongodb";
 
-import orm from "mongoose";
-export const ORM = orm;
+/***
+ * @type {import("mongodb")}
+ */
+
+export const Database = mongodb;
+
+import mongoose from "mongoose";
+
+/***
+ * @type {import("mongoose")}
+ */
+
+export const ORM = mongoose;
